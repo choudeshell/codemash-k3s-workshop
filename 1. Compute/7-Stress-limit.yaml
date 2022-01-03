@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: stress
+spec:  
+  containers:
+    - image: alexeiled/stress-ng
+      resources:
+        limits:
+          cpu: "2"
+          memory: "10Mi"
+        requests:
+          cpu: "2"
+          memory: "1000Gi"
+      name: stress
+      args:
+      - --cpu
+      - '4' 
+      - --io 
+      - '2'
+      - --vm
+      - '1'
+      - --timeout
+      - 20s
+      - --vm-bytes
+      - '10%'
+      - --vm-method
+      - 'all'
+      - --metrics-brief
+  restartPolicy: Never
