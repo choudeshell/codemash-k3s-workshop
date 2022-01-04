@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: sleep
+spec:
+  schedule: "*/1 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: sleep
+            image: k8s.gcr.io/busybox
+            imagePullPolicy: IfNotPresent
+            command: ["echo date"]             
+          restartPolicy: OnFailure ####
