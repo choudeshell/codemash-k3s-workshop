@@ -1,0 +1,21 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: whoami-ingressroute
+spec:
+  routes:                           
+  - kind: Rule
+    match: Path(`/`)                
+    services:                       
+    - kind: Service
+      name: whoami-service
+      port: 80                    
+      scheme: http
+      strategy: RoundRobin
+      weight: 10
+    - kind: Service
+      name: whoami-service-canary
+      port: 80                    
+      scheme: http
+      strategy: RoundRobin
+      weight: 10
