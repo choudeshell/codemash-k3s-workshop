@@ -4,7 +4,7 @@ metadata:
   name: my-pod
 spec:
   containers:
-    - image: k8s.gcr.io/busybox
+    - image: busybox
       name: busybox
       volumeMounts:
       - name: pvc

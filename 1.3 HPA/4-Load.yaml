@@ -4,9 +4,11 @@ metadata:
   name: my-pod
 spec:
   containers:
-    - image: busybox
+    - image: busybox 
       name: busybox
       command: [ "sh", "-c"]
       args:
-      - echo 'stdout';>&2 echo "stderr";sleep 10000
+      - sleep 10000
   restartPolicy: Never
+
+  # while sleep 0.01; do wget -q -O- http://php-apache; done

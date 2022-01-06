@@ -6,7 +6,7 @@ spec:
   hostname: my-pod
   subdomain: my-subdomain
   containers:
-    - image: k8s.gcr.io/busybox
+    - image: busybox
       name: busybox
       command: [ "sh", "-c"]
       args:
