@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: whoami-service
+spec:
+  clusterIP: None
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    app: whoami
