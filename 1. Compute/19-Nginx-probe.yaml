@@ -9,10 +9,10 @@ spec:
   - name: nginx-probes
     image: nginx
     readinessProbe:
-      tcpSocket:
-        port: 80
-      initialDelaySeconds: 5
-      periodSeconds: 10
+       httpGet:
+            scheme: HTTPS
+            path: /index.html
+            port: 8443
     livenessProbe:
       tcpSocket:
         port: 80
