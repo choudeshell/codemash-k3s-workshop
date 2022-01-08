@@ -7,7 +7,7 @@ Getting started with Kubernetes is a daunting task. Everyone you talked to said 
 
 In this workshop, we will not only get our feet wet with Kubernetes, we will get a production-ready instance of Kubernetes up and running. 
 
-**Thank you to [RamNode](https://www.ramnode.com/) and [DigitalOcean(https://www.digitalocean.com)] for providing computing credits to ensure all attendees are successful!**
+**Thank you to [RamNode](https://www.ramnode.com/) and [DigitalOcean](https://www.digitalocean.com) for providing computing credits to ensure all attendees are successful!**
 
 ## Level
 
