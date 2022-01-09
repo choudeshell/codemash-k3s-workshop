@@ -1,3 +1,6 @@
 {
-    "cSpell.enabled": true
+    "cSpell.enabled": true,
+    "vs-kubernetes": {
+        "disable-linters": ["resource-limits"]     
+    }
 }
