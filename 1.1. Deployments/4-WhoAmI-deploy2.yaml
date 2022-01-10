@@ -6,6 +6,10 @@ metadata:
     deployment.kubernetes.io/revision: "2"
 spec:
   replicas: 3
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
   selector:
     matchLabels:
       app: whoami
