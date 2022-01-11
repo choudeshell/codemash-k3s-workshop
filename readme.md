@@ -24,11 +24,8 @@ This workshop is intended for beginner (introductory and overview) skill levels.
  ## Schedule
 **Session: Tuesday, Jan. 11, 8:00 AM - 12:00 PM**
 - 50 minutes: Getting started and slides.
-- 10 minutes: Let's talk.
 - 50 minutes: We do. Let's learn through examples.
-- 10 minutes: Let's take a break.
 - 50 minutes: We do. Let's learn through more examples.
-- 10 minutes: Let's talk.
 - 50 minutes: You do. Learn through exercises.
 
 ## Prerequisites
@@ -55,7 +52,7 @@ This workshop will focus on using k3s/Kubernetes on Linux. The prerequisites for
 If you are unable to meet the hardware requirements, you may sign-up for a cloud compute provider. 
 
 - [RamNode](https://www.ramnode.com/) has graciously provided cloud compute credits. Please reach out to me at choudeshell@gmail.com for a credit code.
-- [DigitalOcean](https://www.digitalocean.com/) has graciously provided cloud compute credits. Please reach out to me at choudeshell@gmail.com for a credit code.
+- [DigitalOcean](https://www.digitalocean.com/) has graciously provided cloud compute credits. Please reach out to me at choudeshell@gmail.com for a credit code. **Currently out of credits**
 
 
 ### Lens (Kubernetes IDE)

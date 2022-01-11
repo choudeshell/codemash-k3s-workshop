@@ -1,4 +1,4 @@
-# Exercise 1 - Tetris
+# Game 1 - Tetris
 
 ## Docker
 https://hub.docker.com/r/eggplanter/sh-tetris
