@@ -5,9 +5,9 @@
 > sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
 > ```
 
-1. Download K3s v1.22.5+k3s1 from https://github.com/k3s-io/k3s/releases/tag/v1.22.5%2Bk3s1 on **your VM/WSL instance**
+1. Download K3s v1.28.5+k3s1 from https://github.com/k3s-io/k3s/releases on **your VM/WSL instance**
 ```shell
-wget https://github.com/k3s-io/k3s/releases/download/v1.22.5%2Bk3s1/k3s
+wget https://github.com/k3s-io/k3s/releases/download/v1.28.5%2Bk3s1/k3s
 ```
 2. Add execute modifier to `k3s`
 ```shell
@@ -25,10 +25,10 @@ cat /etc/rancher/k3s/k3s.yaml
 ```shell
 ip addr show
 ```
-6. Open Lens and go to File > Add Cluster
+6. Open OpenLens and go to File > Add Cluster
 7. Paste in contents of `/etc/rancher/k3s/k3s.yaml`
 8. Change HTTP address to IP address of host Ubuntu System
 ----
 # Bookmarks
 Kubernetes API Docs
-https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.22/
+https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.28/

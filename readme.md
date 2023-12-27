@@ -1,13 +1,15 @@
-# Half the Size, Twice as Awesome: Kubernetes for All of Us (Workshop)
+# K3s - Half the Size, Twice as Awesome: Lightweight Kubernetes
 
 ## This workshop is **hands on**. Let's learn together!
 
 
-Getting started with Kubernetes is a daunting task. Everyone you talked to said it was a pain to get started, but it eventually paid off (unless you’re Docker). What if I told you there was a solution to the startup pain? What if it was something to get your feet wet with, cut your teeth on -- but just as conformant and production ready?
+Are you ready to conquer the Kubernetes learning curve without the pain?
 
-In this workshop, we will not only get our feet wet with Kubernetes, we will get a production-ready instance of Kubernetes up and running. 
+Embarking on a Kubernetes journey can be intimidating. Many have endured the steep initial challenges only to find the eventual rewards. But what if we told you there's a way to make that initial climb smoother? What if you could dive in, gain hands-on experience, and build a production-ready Kubernetes environment without the typical complexity?
 
-**Thank you to [RamNode](https://www.ramnode.com/) and [DigitalOcean](https://www.digitalocean.com) for providing computing credits to ensure all attendees are successful!**
+Introducing K3s – the lightweight Kubernetes distribution that's set to revolutionize your Kubernetes experience.
+
+Join us in this immersive workshop, where we'll not only dip our toes into Kubernetes but also emerge with a fully-fledged, production-ready Kubernetes instance. It's time to unlock the power of Kubernetes without the usual hurdles. Let's make Kubernetes accessible and enjoyable for all. Don't miss out on this opportunity to revolutionize your Kubernetes journey with K3s!
 
 ## Level
 
@@ -22,7 +24,7 @@ This workshop is intended for beginner (introductory and overview) skill levels.
  We will focus on using GUI tools to operate our single instance of Kubernetes. While we will dip into the command line, a majority of the workshop will focus on the GUI tooling.
 
  ## Schedule
-**Session: Tuesday, Jan. 11, 8:00 AM - 12:00 PM**
+**Session: Tuesday, Jan. 11, 1:00 PM - 5:00 PM**
 - 50 minutes: Getting started and slides.
 - 50 minutes: We do. Let's learn through examples.
 - 50 minutes: We do. Let's learn through more examples.
@@ -30,34 +32,41 @@ This workshop is intended for beginner (introductory and overview) skill levels.
 
 ## Prerequisites
 
-### Linux
+### OS
 
-This workshop will focus on using k3s/Kubernetes on Linux. The prerequisites for Linux depends on your laptop.
+This workshop will focus on using a distribution of Kubernetes called k3s. The prerequisites depend on what OS you are running. 
 
-**Windows 10/11**
-- WSL (Windows Subsystem for Linux) (https://docs.microsoft.com/en-us/windows/wsl/install)
-    - Please install Ubuntu 21.04 (https://ubuntu.com/blog/announcing-ubuntu-on-windows-community-preview-wsl-2)
+You can either run k3s in virtual machine running Linux or you can install Docker. In the case of Docker, we will be using K3d to handle creation of the environment. 
+
+**Windows 11**
+- WSL (Windows Subsystem for Linux) (https://learn.microsoft.com/en-us/windows/wsl/install)
+- Or install Docker
 
 **Intel Mac**
-- Please create an Ubuntu 21.04 or Ubuntu 21.10 VM using either:
+- Please create an Ubuntu 23.04 or Ubuntu 23.10 VM using either:
     - VMware Fusion (https://customerconnect.vmware.com/web/vmware/evalcenter?p=fusion-player-personal)
     - Parallels (https://www.parallels.com/)
     - VirtualBox (https://www.virtualbox.org/wiki/Downloads)
+- Or install Docker
 
 **M1 Mac**
-- **Please see cloud providers**
+- Please create an Ubuntu 23.04 or Ubuntu 23.10 VM using either:
+    - VMware Fusion (https://customerconnect.vmware.com/web/vmware/evalcenter?p=fusion-player-personal)
+    - Parallels (https://www.parallels.com/)
+    - VirtualBox (https://www.virtualbox.org/wiki/Downloads)
+- Or install Docker
 
 **Cloud Providers**
 
 If you are unable to meet the hardware requirements, you may sign-up for a cloud compute provider. 
 
-- [RamNode](https://www.ramnode.com/) has graciously provided cloud compute credits. Please reach out to me at choudeshell@gmail.com for a credit code.
-- [DigitalOcean](https://www.digitalocean.com/) has graciously provided cloud compute credits. Please reach out to me at choudeshell@gmail.com for a credit code. **Currently out of credits**
+- [Vultr](https://www.vultr.com/coupons/) Try Vultr for free with $250 free credit. New customers only. **CLOUD250FREE**
+- [DigitalOcean](https://try.digitalocean.com/freetrialoffer/)
 
 
 ### Lens (Kubernetes IDE)
 
-We will be exploring k3s/Kubernetes via an IDE called [Lens](https://k8slens.dev/) (Supported on Windows, Intel Mac, M1 Mac, Linux). 
+We will be exploring k3s/Kubernetes via an IDE called [OpenLens](https://github.com/MuhammedKalkan/OpenLens)
 
 ### HTTP Client
 
