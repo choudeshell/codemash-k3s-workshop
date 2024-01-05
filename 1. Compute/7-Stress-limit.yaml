@@ -7,11 +7,9 @@ spec:
     - image: quay.io/choudeshell/stress-ng:codemash
       resources:
         limits:
-          cpu: "2"
-          memory: "10Mi"
+          cpu: "2m"
         requests:
-          cpu: "2"
-          memory: "1000Gi"
+          cpu: "1m"
       name: stress
       args:
       - --cpu
