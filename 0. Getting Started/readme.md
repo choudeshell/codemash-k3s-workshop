@@ -38,5 +38,6 @@ ip addr show
 ```
 6. Open OpenLens and go to File > Add Cluster
 7. Paste in contents of `/etc/rancher/k3s/k3s.yaml`
+8. Install **@alebcay/openlens-node-pod-menu** extension from https://github.com/alebcay/openlens-node-pod-menu
 ----
 
