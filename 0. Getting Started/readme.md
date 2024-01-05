@@ -5,9 +5,20 @@
 > sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
 > ```
 
-1. Download K3s v1.28.5+k3s1 from https://github.com/k3s-io/k3s/releases on **your VM/WSL instance**
+> You may need to disable IPv6 if running in WSL2. Add the following to **.wslconfig** in your **User** directory
+>
+> ```text
+> [wsl2]
+> kernelCommandLine=ipv6.disable=1
+> ```
+
+1. Download K3s v1.29.0+k3s1 from https://github.com/k3s-io/k3s/releases/tag/v1.29.0%2Bk3s1 on **your x64 VM/WSL instance**
 ```shell
-wget https://github.com/k3s-io/k3s/releases/download/v1.28.5%2Bk3s1/k3s
+wget https://github.com/k3s-io/k3s/releases/download/v1.29.0%2Bk3s1/k3s
+```
+or if running **arm64**
+```shell
+wget https://github.com/k3s-io/k3s/releases/download/v1.29.0%2Bk3s1/k3s-arm64
 ```
 2. Add execute modifier to `k3s`
 ```shell
@@ -27,8 +38,5 @@ ip addr show
 ```
 6. Open OpenLens and go to File > Add Cluster
 7. Paste in contents of `/etc/rancher/k3s/k3s.yaml`
-8. Change HTTP address to IP address of host Ubuntu System
 ----
-# Bookmarks
-Kubernetes API Docs
-https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.28/
+

@@ -14,4 +14,4 @@ spec:
     spec:
       containers:
       - name: whoami-container
-        image: traefik/whoami:v1.7.0
+        image: traefik/whoami:v1.10.1

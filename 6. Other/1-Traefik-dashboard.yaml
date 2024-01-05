@@ -1,13 +1,18 @@
-apiVersion: traefik.containo.us/v1alpha1
-kind: IngressRoute
+apiVersion: v1
+kind: Service
 metadata:
-  name: dashboard
+  name: traefik-dashboard
+  namespace: kube-system
+  labels:
+    app.kubernetes.io/instance: traefik
+    app.kubernetes.io/name: traefik-dashboard
 spec:
-  entryPoints:
-    - web
-  routes:
-    - match: (PathPrefix(`/dashboard`) || PathPrefix(`/api`))
-      kind: Rule
-      services:
-        - name: api@internal
-          kind: TraefikService
+  type: ClusterIP
+  ports:
+  - name: traefik
+    port: 9000
+    targetPort: traefik
+    protocol: TCP
+  selector:
+    app.kubernetes.io/instance: traefik-kube-system
+    app.kubernetes.io/name: traefik
