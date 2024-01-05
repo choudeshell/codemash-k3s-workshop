@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
       - name: sleep
-        image: busybox
+        image: quay.io/choudeshell/busybox:codemash
         command: ["sleep",  "20"]
       restartPolicy: Never

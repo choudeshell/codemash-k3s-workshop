@@ -15,4 +15,4 @@ spec:
     spec:
         containers:
         - name: nginx
-          image: nginx
+          image: quay.io/choudeshell/nginx:codemash

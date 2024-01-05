@@ -6,7 +6,7 @@ spec:
   hostname: my-pod
   subdomain: my-subdomain
   containers:
-    - image: busybox
+    - image: quay.io/choudeshell/busybox:codemash
       name: busybox
       command: [ "sh", "-c"]
       args:

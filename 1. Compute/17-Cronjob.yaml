@@ -10,7 +10,7 @@ spec:
         spec:
           containers:
           - name: sleep
-            image: busybox
+            image: quay.io/choudeshell/busybox:codemash
             imagePullPolicy: IfNotPresent
             command: ["echo date"]             
           restartPolicy: OnFailure ####

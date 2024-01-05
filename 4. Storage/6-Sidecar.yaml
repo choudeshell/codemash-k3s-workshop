@@ -8,7 +8,7 @@ spec:
     emptyDir: {}
   containers:
   - name: busybox
-    image: busybox
+    image: quay.io/choudeshell/busybox:codemash
     command: ["/bin/sh"]
     args: ["-c", "while true; do date >> /var/log/date.txt; sleep 10;done"]
     volumeMounts:

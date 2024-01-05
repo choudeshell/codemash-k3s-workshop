@@ -4,12 +4,12 @@ metadata:
   name: my-pod
 spec:
   containers:
-    - image: busybox
+    - image: quay.io/choudeshell/busybox:codemash
       name: busybox
       command: [ "sh", "-c"]
       args:
       - sleep 10000
-    - image: busybox
+    - image: quay.io/choudeshell/busybox:codemash
       name: busybox2
       command: [ "sh", "-c"]
       args:

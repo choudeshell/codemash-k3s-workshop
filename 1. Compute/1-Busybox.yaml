@@ -4,6 +4,6 @@ metadata:
   name: my-pod
 spec:
   containers:
-    - image: busybox
+    - image: quay.io/choudeshell/busybox:codemash
       name: busybox
   restartPolicy: Never
