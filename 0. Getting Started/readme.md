@@ -46,7 +46,7 @@ ip addr show
 1. Download k3d (https://github.com/k3d-io/k3d/releases)
 2. Create 2 node cluster
 ```shell
-k3d cluster create codemash --agents 2
+k3d cluster create codemash --agents 2 -p "8081:80@loadbalancer"
 ```
 3. Grab kubeconfig
 ```shell
