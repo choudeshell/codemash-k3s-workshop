@@ -3,6 +3,8 @@ kind: PersistentVolume
 metadata:
   name: mydata
 spec:
+  capacity:
+    storage: 1Gi
   hostPath:
     path: /mnt/mydata      
     type: DirectoryOrCreate

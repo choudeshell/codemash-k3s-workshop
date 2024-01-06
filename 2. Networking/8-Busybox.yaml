@@ -3,12 +3,9 @@ kind: Pod
 metadata:
   name: my-pod
 spec:
-  hostname: my-pod
-  subdomain: my-subdomain
   containers:
     - image: quay.io/choudeshell/busybox:codemash
       name: busybox
-      command: [ "sh", "-c"]
-      args:
-      - sleep 10000
+      tty: true
+      stdin: true
   restartPolicy: Never

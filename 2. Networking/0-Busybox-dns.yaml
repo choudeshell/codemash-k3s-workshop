@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  labels:
+    env: codemash
+spec:
+  hostname: my-pod
+  subdomain: my-subdomain
+  containers:
+    - image: quay.io/choudeshell/busybox:codemash
+      name: busybox
+      tty: true
+      stdin: true
+      command: [ "sh", "-c"]
+      args:
+      - sleep 10000
+  restartPolicy: Never
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod2
+  labels:
+    env: codemash
+spec:
+  hostname: my-pod2
+  subdomain: my-subdomain
+  containers:
+    - image: quay.io/choudeshell/busybox:codemash
+      name: busybox
+      tty: true
+      stdin: true
+      command: [ "sh", "-c"]
+      args:
+      - sleep 10000
+  restartPolicy: Never
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: headless
+spec:
+  clusterIP: None
+  selector:
+    env: codemash
+---

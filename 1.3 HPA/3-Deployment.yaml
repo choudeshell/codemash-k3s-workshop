@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: php-apache
-        image: k8s.gcr.io/hpa-example
+        image: quay.io/choudeshell/php-apache:codemash
         ports:
         - containerPort: 80
         resources:

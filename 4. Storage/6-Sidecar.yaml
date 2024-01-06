@@ -2,6 +2,8 @@ kind: Pod
 apiVersion: v1
 metadata:
   name: sidecar
+  labels:
+    app: nginx
 spec:
   volumes:
   - name: logs
@@ -21,3 +23,13 @@ spec:
     volumeMounts:
     - name: logs
       mountPath: /usr/share/nginx/html
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx
+spec:
+  ports:
+  - port: 80
+  selector:
+    app: nginx
