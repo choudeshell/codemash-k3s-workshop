@@ -12,13 +12,13 @@
 > kernelCommandLine=ipv6.disable=1
 > ```
 
-1. Download K3s v1.29.0+k3s1 from https://github.com/k3s-io/k3s/releases/tag/v1.29.0%2Bk3s1 on **your x64 VM/WSL instance**
+1. Download K3s v1.28.5+k3s1 from https://github.com/k3s-io/k3s/releases/download/v1.28.5%2Bk3s1/k3s on **your x64 VM/WSL instance**
 ```shell
-wget https://github.com/k3s-io/k3s/releases/download/v1.29.0%2Bk3s1/k3s
+wget https://github.com/k3s-io/k3s/releases/download/v1.28.5%2Bk3s1/k3s
 ```
 or if running **arm64**
 ```shell
-wget https://github.com/k3s-io/k3s/releases/download/v1.29.0%2Bk3s1/k3s-arm64
+wget https://github.com/k3s-io/k3s/releases/download/v1.28.5%2Bk3s1/k3s-arm64
 ```
 2. Add execute modifier to `k3s`
 ```shell
