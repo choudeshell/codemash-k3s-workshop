@@ -1,5 +1,7 @@
 # Getting Started
 
+## Linux (VM or WSL)
+
 > If you are running iptables in nftables mode instead of legacy you might encounter issues. We recommend utilizing newer iptables (such as 1.6.1+) to avoid issues.
 > ```bash
 > sudo update-alternatives --set iptables /usr/sbin/iptables-legacy
@@ -36,8 +38,31 @@ cat /etc/rancher/k3s/k3s.yaml
 ```shell
 ip addr show
 ```
-6. Open OpenLens and go to File > Add Cluster
-7. Paste in contents of `/etc/rancher/k3s/k3s.yaml`
-8. Install **@alebcay/openlens-node-pod-menu** extension from https://github.com/alebcay/openlens-node-pod-menu
-----
+
+
+
+## k3d (Docker)
+
+1. Download k3d (https://github.com/k3d-io/k3d/releases)
+2. Create 2 node cluster
+```shell
+k3d cluster create codemash --agents 2 -p "8081:80@loadbalancer"
+```
+3. Grab kubeconfig
+```shell
+k3d kubeconfig get codemash
+```
+
+
+
+## OpenLens
+
+1. Install OpenLens (https://github.com/MuhammedKalkan/OpenLens)
+2. Open OpenLens and go to File > Add Cluster
+3. Paste in contents of `/etc/rancher/k3s/k3s.yaml`
+4. Install **@alebcay/openlens-node-pod-menu** extension from https://github.com/alebcay/openlens-node-pod-menu
+
+
+
+
 

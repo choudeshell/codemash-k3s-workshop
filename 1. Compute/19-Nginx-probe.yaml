@@ -10,9 +10,9 @@ spec:
     image: quay.io/choudeshell/nginx:codemash
     readinessProbe:
        httpGet:
-            scheme: HTTPS
+            scheme: HTTP
             path: /index.html
-            port: 8443
+            port: 80
     livenessProbe:
       tcpSocket:
         port: 80
